@@ -5,10 +5,9 @@ const Bookshelf = () => {
   const [bookshelf, setBookshelf] = useState([]);
 
   useEffect(() => {
-    // Retrieve bookshelf data from localStorage
     const storedBookshelf = JSON.parse(localStorage.getItem('bookshelf')) || [];
     setBookshelf(storedBookshelf);
-  }, []); // Run this effect only once, on component mount
+  }, []); 
 
   return (
     <div>

@@ -5,7 +5,6 @@ const Navbar = ({ user }) => {
 
   const handleLogout = async () => {
     try {
-      // Your logout logic here
     } catch (error) {
       console.error("Error logging out:", error);
     }
